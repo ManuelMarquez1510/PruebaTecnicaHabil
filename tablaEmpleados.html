@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+    <meta charset="UTF-8">
+    <title>Empleados</title>
+</head>
+<body>
+    
+    <h1>Registro de empleados</h1>
+        <div class="content">
+        <form id="formEmpleados" class="form-register">
+            <div >          
+                <label class="controls" for="nombre">Nombre</label>
+                <input class="controls-inputs" type="text" name="nombre" id="nombre">
+            </div>  
+            
+            <div>
+                <label class="controls" for="apellidoPaterno">Apellido Paterno</label>
+                <input class="controls-inputs" type="text" name="apellidoPaterno" id="apellidoPaterno">
+            </div>
+            <div>
+                <label class="controls" for="apellidoMaterno">Apellido Materno</label>
+                <input class="controls-inputs" type="text" name="apellidoMaterno" id="apellidoMaterno">
+            </div>
+
+            <div>
+                <label class="controls" for="fecha">Fecha de nacimiento</label>
+                <input class="controls-inputs" type="date" name="fecha" id="fecha">
+            </div>
+
+            <div>
+                <label class="controls" for="area">Area</label>
+                <input class="controls-inputs"type="text" name="area" id="area">
+            </div>
+
+            <button class="botons"type="submit">Añadir</button>
+        </form>
+
+        <table id="tabla" class="content-table">
+            <tr class="active-row">
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th>Fecha de nacimiento</th>
+                <th>Area</th>
+                
+            </tr>
+            
+        </table>
+    </div>
+</body>
+<script src="/empleados.js"></script>
+</html>
